@@ -1,9 +1,9 @@
 import icon from "../../../assets/icons/Button1-icon.svg";
-import "./Button1.scss";
+import styles from "./Button1.module.scss";
 
 const Button1 = () => {
     return (
-        <button>
+        <button className={styles.button}>
             <img src={icon} alt="icon for button" />
             <span>New Invoice</span>
         </button>

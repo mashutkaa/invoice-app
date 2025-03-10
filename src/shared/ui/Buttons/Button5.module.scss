@@ -1,0 +1,26 @@
+@use "../../../app/styles/variables.scss" as *;
+
+.button {
+    width: 89px;
+    height: 48px;
+    border-radius: 24px;
+    background: $color_08;
+
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 3px;
+    padding-right: 1px;
+
+    border: none;
+    &:hover {
+        background: $color_10;
+        cursor: pointer;
+    }
+}

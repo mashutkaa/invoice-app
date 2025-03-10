@@ -1,9 +1,9 @@
-import Button1 from "../shared/ui/Buttons/Button1";
+import Button6 from "../shared/ui/Buttons/Button6";
 
 function App() {
     return (
         <>
-            <Button1 />
+            <Button6 />
         </>
     );
 }
