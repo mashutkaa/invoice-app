@@ -1,0 +1,41 @@
+@use "../variables.scss" as *; 
+
+.emptyInvoices_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+
+    img {
+        height: 200px;
+        width: auto;
+
+        margin-bottom: 66px;
+    }
+
+    h2 {
+        color: $color_08;
+        font-family: "League Spartan";
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: -0.75px;
+
+        margin-bottom: 23px;
+    }
+
+    p {
+        color: $color_06;
+        text-align: center;
+        font-family: "League Spartan";
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 15px;
+        letter-spacing: -0.1px;
+
+        span {
+            font-weight: 700;
+        }
+    }
+}
