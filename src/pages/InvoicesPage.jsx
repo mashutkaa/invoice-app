@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import Invoice from "../components/Invoice";
 import EmptyInvoices from "../components/EmptyInvoices";
+import CreateInvoiceForm from "../components/CreateInvoiceForm";
 
 import buttonIcon1 from "../assets/icons/Button1-icon.svg";
 import dropdownIcon from "../assets/icons/dropdown.svg";
@@ -15,6 +16,8 @@ const Invoices = () => {
   //   setSelectedOptions(selectedOptions);
   //   console.log(selectedOptions);
   // };
+
+  const [formActive, setFormActive] = useState(true);
 
   let invoicesCount = 0;
 
@@ -66,13 +69,17 @@ const Invoices = () => {
               </form>
             </div>
           </div>
-          <button className={styles.newInvoice_button}>
+          <button
+            className={styles.newInvoice_button}
+            onClick={() => setFormActive(true)}
+          >
             <img src={buttonIcon1} alt="icon on button" />
             New Invoice
           </button>
         </div>
       </div>
       <EmptyInvoices />
+      <CreateInvoiceForm active={formActive} setActive={setFormActive} />
     </section>
   );
 };
