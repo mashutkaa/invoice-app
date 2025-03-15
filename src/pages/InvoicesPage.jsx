@@ -17,7 +17,7 @@ const Invoices = () => {
   //   console.log(selectedOptions);
   // };
 
-  const [formActive, setFormActive] = useState(true);
+  const [formActive, setFormActive] = useState(false);
 
   let invoicesCount = 0;
 
